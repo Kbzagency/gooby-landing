@@ -79,9 +79,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:400;
 .hero::before{content:'';position:absolute;inset:0;z-index:0;
   background:linear-gradient(180deg,rgba(8,8,40,0.90) 0%,rgba(8,8,40,0.80) 40%,rgba(8,8,40,0.85) 80%,rgba(8,8,40,0.95) 100%);}
 .hero>*{position:relative;z-index:2;}
-.hero-eyebrow{font-family:'Poppins',sans-serif;font-size:22px;letter-spacing:1.5px;
-  color:var(--C);text-transform:uppercase;margin-bottom:32px;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-weight:700;line-height:1.2;text-align:center;}
+.hero-eyebrow{font-family:'Poppins',sans-serif;font-size:clamp(14px,4vw,22px);letter-spacing:1.5px;
+  color:var(--C);text-transform:none;font-style:italic;margin-bottom:32px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-weight:700;line-height:1.2;text-align:center;white-space:nowrap;}
 .hero-eyebrow::before{display:none;}
 .hero-eyebrow::after{display:none;}
 
@@ -675,7 +675,7 @@ footer>*{position:relative;z-index:1;}
   section{padding:70px 16px;}
 }
 
-.em{color:#FFFFFF;font-weight:700;text-shadow:0 0 12px rgba(255,0,204,0.7);}
+.em{color:#FFFFFF;font-weight:700;}
 .em-c{color:#FFFFFF;font-weight:700;text-shadow:0 0 12px rgba(0,245,255,0.6);}
 </style>
 </head>
@@ -713,8 +713,8 @@ footer>*{position:relative;z-index:1;}
 
 <!-- ══════════════ HERO ══════════════ -->
 <section class="hero">
-  <div style="font-family:'Poppins',sans-serif;font-size:clamp(28px,5vw,48px);font-weight:700;color:var(--W);text-transform:uppercase;margin-bottom:24px;">BIENVENIDOS A GOOBY</div>
-  <div class="hero-eyebrow">El Futuro del<br>Fan Engagement</div>
+  <div style="font-family:'Poppins',sans-serif;font-size:clamp(28px,5vw,48px);font-weight:700;color:var(--W);text-transform:uppercase;margin-bottom:0;">BIENVENIDOS A GOOBY</div>
+  <div class="hero-eyebrow">El Futuro del Fan Engagement</div>
 
   <h1 class="hero-headline" id="heroHeadline">
     <span class="tw-line hl-white" data-text="¿QUÉ PASARÍA SI TU COMUNIDAD DEJARA DE MIRAR…" data-html='¿QUÉ PASARÍA SI TU COMUNIDAD DEJARA DE <span class="hl-magenta">MIRAR</span>…'></span>
@@ -755,8 +755,8 @@ footer>*{position:relative;z-index:1;}
         <div class="change-headline">Tu comunidad como protagonistas</div>
         <div class="change-body">Ya no alcanza con ver. Quieren estar adentro.</div>
         <ul class="change-items">
-          <li><div class="item-dot"></div>Participar</li>
-          <li><div class="item-dot"></div>Aparecer</li>
+          <li><div class="item-dot"></div>Participan</li>
+          <li><div class="item-dot"></div>Aparecen</li>
           <li><div class="item-dot"></div>Juegan con vos</li>
         </ul>
       </div>
@@ -803,7 +803,7 @@ footer>*{position:relative;z-index:1;}
 <section id="valor">
   <div class="section-inner">
     <div class="section-tag anim-in">Propuesta de valor</div>
-    <h2 class="section-title anim-in anim-delay-1"><span class="hl-cyan">IMPACTO REAL</span></h2>
+    <h2 class="section-title anim-in anim-delay-1"><span class="hl-white">IMPACTO REAL</span></h2>
 
     <div class="value-grid">
 
@@ -901,7 +901,7 @@ footer>*{position:relative;z-index:1;}
         <div class="vc-text">
           <div class="vc-num">07</div>
           <div class="value-title">Marcas</div>
-          <div class="value-body">Mejores campañas con integración natural y contenido generado por fans que multiplican el impacto.</div>
+          <div class="value-body">Mejores activaciones con integración natural y contenido generado por fans que multiplican el impacto.</div>
           <span class="value-tag">No es campaña. Es experiencia</span>
         </div>
       </div>
@@ -1022,11 +1022,8 @@ footer>*{position:relative;z-index:1;}
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo"><img src="imagenes/TEMPLATE FER (1).pptx (1).png" alt="GOOBY" style="height:60px;width:auto;"></div>
+  <div class="footer-logo"><span style="font-size:60px;background:linear-gradient(135deg,var(--M),var(--P),var(--C));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">∞</span></div>
   <div class="footer-sub">Miru Khon Universe · Todos los derechos reservados</div>
-  <div style="margin-top:16px;font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:1px;color:rgba(255,255,255,0.18);">
-    POWERED BY <a href="https://www.k8z.solutions" target="_blank" rel="noopener" style="color:var(--C);text-decoration:none;letter-spacing:1px;transition:all 0.3s;border-bottom:1px solid rgba(0,245,255,0.3);padding-bottom:1px;" onmouseover="this.style.color='var(--M)';this.style.borderBottomColor='rgba(255,0,168,0.6)';this.style.textShadow='0 0 12px rgba(0,245,255,0.5)'" onmouseout="this.style.color='var(--C)';this.style.borderBottomColor='rgba(0,245,255,0.3)';this.style.textShadow='none'">K8Z.SOLUTIONS</a>
-  </div>
 </footer>
 
 <!-- ══════════════ LOGIN MODAL ══════════════ -->
